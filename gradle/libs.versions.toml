@@ -1,0 +1,15 @@
+[versions]
+# Build plugins
+spotless = "7.0.3"
+
+# Dependencies
+google-java-format = "1.27.0"
+junit-bom = "5.10.0"
+
+[libraries]
+google-java-format = { module = "com.google.googlejavaformat:google-java-format", version.ref = "google-java-format" }
+junit-bom = { module = "org.junit:junit-bom", version.ref = "junit-bom" }
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter" }
+
+[plugins]
+spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
